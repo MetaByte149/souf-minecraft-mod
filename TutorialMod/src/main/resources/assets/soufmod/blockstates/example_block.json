@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "soufmod:block/example_block"
+		}
+	}
+}

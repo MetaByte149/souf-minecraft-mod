@@ -1,0 +1,13 @@
+package com.souf;
+
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod("soufmod")
+public class SoufMod {
+	
+	public SoufMod() {
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+
+}

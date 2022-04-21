@@ -1,0 +1,12 @@
+package com.souf.soufmod.init;
+
+import com.souf.soufmod.SoufMod;
+
+import net.minecraft.world.item.Item;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+
+public class ItemInit {
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SoufMod.MOD_ID);
+			
+}

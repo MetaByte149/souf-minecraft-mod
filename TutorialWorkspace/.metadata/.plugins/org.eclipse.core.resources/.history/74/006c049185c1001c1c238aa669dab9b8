@@ -1,0 +1,25 @@
+package com.souf;
+
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod("soufmod")
+public class SoufMod {
+	
+	public static final String MOD_ID = "soufmod";
+	public static final CreativeModeTab SOUF_MOD_TAB = new CreativeModeTab(MOD_ID) {
+		
+		@Override
+		public ItemStack makeIcon() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	};
+	
+	public SoufMod() {
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+
+}
