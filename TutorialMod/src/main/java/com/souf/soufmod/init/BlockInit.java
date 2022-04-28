@@ -5,6 +5,7 @@ import java.util.function.Function;
 import com.google.common.base.Supplier;
 import com.souf.soufmod.SoufMod;
 import com.souf.soufmod.block.ExampleBlock;
+import com.souf.soufmod.block.SoufBlock;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -30,6 +31,10 @@ public class BlockInit {
 
 	public static final RegistryObject<Block> ROTATABLE_BLOCK = register("rotatable_block",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).dynamicShape().sound(SoundType.STONE)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SoufMod.SOUF_MOD_TAB)));
+	
+	public static final RegistryObject<Block> SOUF_BLOCK = register("souf_block",
+			() -> new SoufBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).dynamicShape().noOcclusion().sound(SoundType.STONE)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SoufMod.SOUF_MOD_TAB)));
 
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,

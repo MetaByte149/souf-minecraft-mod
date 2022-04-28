@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "soufmod:block/souf_block" },
+    "facing=east": { "model": "soufmod:block/souf_block", "y": 90 },
+    "facing=south": { "model": "soufmod:block/souf_block", "y": 180 },
+    "facing=west": { "model": "soufmod:block/souf_block", "y": 270 }
+  }
+}

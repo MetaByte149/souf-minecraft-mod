@@ -2,5 +2,6 @@
 	"item.soufmod.example_item": "Example Item",
 	"block.soufmod.example_block": "Example Block",
 	"block.soufmod.rotatable_block": "Rotatable Block",
+	"block.soufmod.souf_block":"Souf Block",
 	"itemGroup.soufmod": "souf mod"
 }
